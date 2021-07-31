@@ -12,7 +12,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Stuart Hobson",
-  "license": "My code is free to use",
+  "license": "This code is free to use",
   "dependencies": {
     "discord.js": "^12.5.3",
     "dotenv": "^10.0.0",
