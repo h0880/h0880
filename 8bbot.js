@@ -1,11 +1,16 @@
-console.log("Logging Bot into Discord");
+//require("dotenv").config();
+//const Discord = require("discord.js");
+//const client = new Discord.Client();
+//client.login(process.env.BOTTOKEN);
+//client.on("ready", readyDiscord);
 
-require("dotenv").config();
+require('dotenv').config(); 
 const Discord = require("discord.js");
 const client = new Discord.Client();
-client.login(process.env.BOTTOKEN);
 
-client.on("ready", readyDiscord);
+client.on("ready", () => {
+  console.log("I am ready!");
+});
 
 function readyDiscord() {
     console.log("Bot logged into Discord");
