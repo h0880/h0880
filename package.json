@@ -1,8 +1,12 @@
 {
   "name": "8ballbot",
-  "version": "14.17.3.",
+  "version": "1.0.0.",
   "description": "Magic 8 Ball",
   "main": "8bbot.js",
+  "engines": {
+    "node": "14.17.3",
+    "npm": "*"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node 8bbot.js"
