@@ -1,0 +1,19 @@
+{
+  "name": "8ballbot",
+  "version": "14.17.3.",
+  "description": "Magic 8 Ball",
+  "main": "8bbot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node 8bbot.js"
+  },
+  "author": "Stuart Hobson",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^12.5.3",
+    "dotenv": "^10.0.0",
+    "pm2": "^5.1.0"
+  },
+  "devDependencies": {},
+  "keywords": []
+}
