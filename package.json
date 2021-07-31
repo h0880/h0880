@@ -4,7 +4,7 @@
   "description": "Magic 8 Ball",
   "main": "8bbot.js",
   "engines": {
-    "node": "14.17.3.",
+    "node": "14.17.3",
     "npm": "*"
   },
   "scripts": {
