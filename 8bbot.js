@@ -49,7 +49,7 @@ msg.channel.send(replies[index]);
 
 console.log(msg.content);
 console.log(replies[index]);
-//
+
 //msg.reply(replies[index]);
 
 }
