@@ -2,7 +2,7 @@ console.log("Logging Bot into Discord");
 
 require("dotenv").config();
 
-const  { Client, Intents } = require('discord.js');
+const { Client, Intents } = require('discord.js');
 
 const client = new Client({ intents: [Intents.FLAGS.GUILD_MESSAGES,
   Intents.FLAGS.GUILD_MESSAGE_REACTIONS,
