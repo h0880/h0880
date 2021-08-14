@@ -1,19 +1,19 @@
-require('dotenv').config(); 
+console.log("Logging Bot into Discord");
+
+require("dotenv").config();
+
 const Discord = require("discord.js");
 const client = new Discord.Client();
-
 client.login(process.env.BOTTOKEN);
-client.on("ready", () => {
 
-  console.log("I am ready!");
-});
+client.on("ready", readyDiscord);
 
 function readyDiscord() {
     console.log("Bot logged into Discord");
 }
 
 const replies = [
-    "It is certain",
+    "It is not certain",
     "It is decidedly so",
     "Without a doubt",
     "Yes Definitely",
