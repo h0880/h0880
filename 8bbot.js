@@ -14,8 +14,6 @@ const client = new Client({ intents: [Intents.FLAGS.GUILD_MESSAGES,
 
 client.login(process.env.BOTTOKEN);
 
-//client.login('ODY5ODI1ODI1NTM1NTg2MzA0.YQD2bQ.LiNE5BjCcwLLNxZ1i_3mqi545bs');
-
 client.on("ready", readyDiscord);
 
 function readyDiscord() {
