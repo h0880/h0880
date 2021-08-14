@@ -2,9 +2,19 @@ console.log("Logging Bot into Discord");
 
 require("dotenv").config();
 
-const Discord = require("discord.js");
-const client = new Discord.Client();
+const { Client, Intents } = require('discord.js');
+
+const client = new Client({ intents: [Intents.FLAGS.GUILD_MESSAGES,
+  Intents.FLAGS.GUILD_MESSAGE_REACTIONS,
+  Intents.FLAGS.GUILDS,
+  Intents.FLAGS.GUILD_MESSAGE_TYPING,
+  Intents.FLAGS.DIRECT_MESSAGE_REACTIONS,
+  Intents.FLAGS.DIRECT_MESSAGE_TYPING,
+  Intents.FLAGS.GUILD_MEMBERS]});
+
 client.login(process.env.BOTTOKEN);
+
+//client.login('ODY5ODI1ODI1NTM1NTg2MzA0.YQD2bQ.LiNE5BjCcwLLNxZ1i_3mqi545bs');
 
 client.on("ready", readyDiscord);
 
@@ -13,7 +23,7 @@ function readyDiscord() {
 }
 
 const replies = [
-    "It is not certain",
+    "It is certain",
     "It is decidedly so",
     "Without a doubt",
     "Yes Definitely",
@@ -35,7 +45,7 @@ const replies = [
     "My reply is no"
 ]
 
-client.on("message", gotMessage);
+client.on("messageCreate", gotMessage);
 
 function gotMessage(msg) { 
 
