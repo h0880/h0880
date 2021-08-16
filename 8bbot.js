@@ -4,7 +4,12 @@ require("dotenv").config();
 
 const { Client, Intents } = require('discord.js');
 
-const client = new Client({ intents: [Intents.FLAGS.GUILD_MESSAGES,
+// not a good idea to enable all intents as below
+
+//const client = new Discord.Client({ intents: 32767 });
+
+const client = new Discord.Client({ intents: [
+  Intents.FLAGS.GUILD_MESSAGES,
   Intents.FLAGS.GUILD_MESSAGE_REACTIONS,
   Intents.FLAGS.GUILDS,
   Intents.FLAGS.GUILD_MESSAGE_TYPING,
