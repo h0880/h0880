@@ -8,13 +8,9 @@ const Discord = require('discord.js');
 
 // not a good idea to enable all intents as below
 
-//const client = new Discord.Client({ intents: 32767 });
+const client = new Discord.Client({ Intents: 32767 });
 
 //const client = new Discord.Client({ intents: [
-
-
-
-  const client = new Discord.Client({ Intents: 32767 });
 
 //const client = new Client({ intents: [
  // Intents.FLAGS.GUILD_MESSAGES,
