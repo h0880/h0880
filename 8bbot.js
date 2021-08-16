@@ -14,7 +14,7 @@ const Discord = require('discord.js');
 
 
 
-  const client = new Discord.Client({ intents: 32767 });
+  const client = new Discord.Client({ Intents: 32767 });
 
 //const client = new Client({ intents: [
  // Intents.FLAGS.GUILD_MESSAGES,
