@@ -2,7 +2,7 @@ console.log("Logging Bot into Discord");
 
 require("dotenv").config();
 
-const { Client, Intents } = require('discord.js');
+const { client, Intents } = require('discord.js');
 
 // not a good idea to enable all intents as below
 
