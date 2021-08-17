@@ -2,24 +2,23 @@ console.log("Logging Bot into Discord");
 
 require("dotenv").config();
 
-const Discord = require('discord.js');
+//const Discord = require('discord.js');
 
-//const { client, Intents } = require('discord.js');
+const { Discord, client, Intents } = require('discord.js');
 
 // not a good idea to enable all intents as below
 
-const client = new Discord.Client({ Intents: 32767 });
+//const client = new Discord.Client({ Intents: 32767 });
 
-//const client = new Discord.Client({ intents: [
+client = new Discord.Client({ intents: [
 
-//const client = new Client({ intents: [
- // Intents.FLAGS.GUILD_MESSAGES,
-  //Intents.FLAGS.GUILD_MESSAGE_REACTIONS,
-  //Intents.FLAGS.GUILDS,
-  //Intents.FLAGS.GUILD_MESSAGE_TYPING,
- // Intents.FLAGS.DIRECT_MESSAGE_REACTIONS,
- // Intents.FLAGS.DIRECT_MESSAGE_TYPING,
-  //Intents.FLAGS.GUILD_MEMBERS]});
+  Intents.FLAGS.GUILD_MESSAGES,
+  Intents.FLAGS.GUILD_MESSAGE_REACTIONS,
+  Intents.FLAGS.GUILDS,
+  Intents.FLAGS.GUILD_MESSAGE_TYPING,
+  Intents.FLAGS.DIRECT_MESSAGE_REACTIONS,
+  Intents.FLAGS.DIRECT_MESSAGE_TYPING,
+  Intents.FLAGS.GUILD_MEMBERS]});
 
 client.login(process.BOTTOKEN);
 
