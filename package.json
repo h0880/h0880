@@ -2,6 +2,9 @@
   "name": "8bbot",
   "version": "16.6.2",
   "description": "8 Ball Bot",
+  "engines": {
+    "node": "16.x"
+  },
   "main": "8bbot.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -12,6 +15,7 @@
   "dependencies": {
     "discord.js": "^13.1.0",
     "dotenv": "^10.0.0",
+    "jshint": "^2.13.1",
     "pm2": "^5.1.0"
   },
   "keywords": []
